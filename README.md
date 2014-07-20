@@ -1,5 +1,3 @@
-android_device_samsung_GT-I8530
-===============================
 
 ## Samsung Galaxy Beam device tree. ##
 
