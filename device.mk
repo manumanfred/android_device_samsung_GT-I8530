@@ -72,8 +72,8 @@ PRODUCT_COPY_FILES += \
 # PRODUCT_COPY_FILES += \
 # 	device/samsung/tuna/bcmdhd.cal:system/etc/wifi/bcmdhd.cal
 
-# PRODUCT_PROPERTY_OVERRIDES := \
-# 	wifi.interface=wlan0
+ PRODUCT_PROPERTY_OVERRIDES := \
+ 	wifi.interface=wlan0
 
 # Enable AAC 5.1 output
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -153,6 +153,6 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 # $(call inherit-product-if-exists, vendor/ti/proprietary/omap4/ti-omap4-vendor.mk)
 # $(call inherit-product-if-exists, vendor/samsung/tuna/device-vendor.mk)
 
-# BOARD_WLAN_DEVICE_REV := bcm4330_b2
-# WIFI_BAND             := 802_11_ABG
-# $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4330/device-bcm.mk)
+BOARD_WLAN_DEVICE_REV := bcm4330_b2
+WIFI_BAND             := 802_11_ABG
+$(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4330/device-bcm.mk)
