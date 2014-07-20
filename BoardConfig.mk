@@ -54,7 +54,7 @@ USE_OPENGL_RENDERER := true
 # set if the target supports FBIO_WAITFORVSYNC
 TARGET_HAS_WAITFORVSYNC := true
 
-# TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
+TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
 # TARGET_RECOVERY_UI_LIB := librecovery_ui_tuna
 
 # device-specific extensions to the updater binary
