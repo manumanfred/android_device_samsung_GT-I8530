@@ -19,6 +19,12 @@
 #
 # Everything in this directory will become public
 
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+LOCAL_KERNEL := device/samsung/GT-I8530/kernel.bin
+else
+LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+endif
+
 DEVICE_PACKAGE_OVERLAYS := device/samsung/GT-I8530/overlay
 
 # This device is xhdpi.  However the platform doesn't
@@ -49,6 +55,7 @@ PRODUCT_COPY_FILES += \
 	device/samsung/GT-I8530/audio_effects.conf:system/vendor/etc/audio_effects.conf
 
 PRODUCT_COPY_FILES += \
+	$(LOCAL_KERNEL):kernel \
 	device/samsung/GT-I8530/init.samsung.rc:root/init.samsung.rc \
 	device/samsung/GT-I8530/init.samsung.usb.rc:root/init.samsung.usb.rc \
 	device/samsung/GT-I8530/fstab.samsunggavini:root/fstab.samsunggavini \
