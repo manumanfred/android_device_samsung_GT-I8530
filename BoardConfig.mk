@@ -57,6 +57,10 @@ TARGET_HAS_WAITFORVSYNC := true
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
 # TARGET_RECOVERY_UI_LIB := librecovery_ui_tuna
 
+# Recovery
+TARGET_RECOVERY_INITRC := device/samsung/GT-I8530/recovery.rc
+BOARD_CUSTOM_RECOVERY_KEYMAPPING:= ../../device/samsung/GT-I8530/recovery/recovery_ui.c
+
 # device-specific extensions to the updater binary
 # TARGET_RECOVERY_UPDATER_LIBS += librecovery_updater_tuna
 # TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/GT-I8530
