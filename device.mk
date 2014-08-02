@@ -146,6 +146,11 @@ PRODUCT_PACKAGES += \
 	e2fsck \
 	setup_fs
 
+# Kernel
+LOCAL_KERNEL := device/samsung/GT-I8530/kernel.bin
+PRODUCT_COPY_FILES += \
+	$(LOCAL_KERNEL):kernel
+
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
 # $(call inherit-product-if-exists, vendor/nxp/pn544/nxp-pn544-fw-vendor.mk)
