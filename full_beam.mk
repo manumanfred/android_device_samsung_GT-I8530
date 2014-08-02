@@ -28,8 +28,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 # This is where we'd set a backup provider if we had one
 #$(call inherit-product, device/sample/products/backup_overlay.mk)
-# Inherit from maguro device
-$(call inherit-product, device/samsung/maguro/device.mk)
+
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_NAME := full_GT-I8530
