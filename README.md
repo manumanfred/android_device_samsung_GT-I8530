@@ -10,4 +10,3 @@ This won't be finished device tree for beam but just the start, until I get a ne
 - GPU: Mali 400
 - Android OS, v2.3.6 (Gingerbread), Jelly Bean 4.1.2 test version buggy, polish CSC
 - HDPI
-- 
